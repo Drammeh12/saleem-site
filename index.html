@@ -80,6 +80,7 @@
 
   /* products */
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+  @media(min-width:901px){#work .grid3 .card:nth-child(4){grid-column:2}}
   @media(max-width:900px){.grid3{grid-template-columns:1fr}}
   .card{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;background:linear-gradient(180deg,var(--panel),var(--ink));transition:transform .32s,border-color .32s;overflow:hidden}
   .card:hover{transform:translateY(-6px);border-color:rgba(140,160,230,.34)}
@@ -210,6 +211,7 @@
       <div class="card reveal" style="--c:#5aa6ff"><div class="halo"></div><div class="tag">Cloud infrastructure</div><h3>Bash Cloud</h3><p>A platform that takes code from GitHub to a live, secure web address: hosting, databases, storage, and uptime, built for African developers. It runs on its own domain and is deployed on real server infrastructure.</p></div>
       <div class="card reveal" style="--c:#f2b65c"><div class="halo"></div><div class="tag">Financial technology</div><h3>ClearKobo</h3><p>Reconciliation for businesses: it compares payments against bank statements and processors, flags missing settlements and duplicate charges, and makes financial records agree, with AI-assisted analysis.</p></div>
       <div class="card reveal" style="--c:#8b7cff"><div class="halo"></div><div class="tag">Education network</div><h3>Naija Campus</h3><p>A student-focused platform to connect academic communities, discover opportunities, and learn. It starts with Nigerian students and grows into a wider African academic network, with an AI study assistant.</p></div>
+      <div class="card reveal" style="--c:#2fe6a6"><div class="halo"></div><div class="tag">Application security</div><h3>Lucent Shield</h3><p>A defensive security scanner that watches the code and websites I build: it finds leaked secrets, vulnerable dependencies and insecure settings, shows the fix for each one, and keeps monitoring live, with a dashboard that turns from green to red the moment something is exposed.</p></div>
     </div>
   </div>
 </section>
